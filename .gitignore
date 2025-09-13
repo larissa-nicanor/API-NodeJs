@@ -1,0 +1,9 @@
+# Dependências do Node.js
+/node_modules
+
+# Código compilado do TypeScript
+/dist
+
+# Arquivos de log e de ambiente
+.env
+npm-debug.log
