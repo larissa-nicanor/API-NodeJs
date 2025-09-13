@@ -11,6 +11,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 * **[Fastify](https://www.fastify.io/)**
 * **[tsx](https://github.com/esbuild-kit/tsx)** (para execução em modo de desenvolvimento)
 
+
 * ## Iniciando o Projeto
 ### Pré-requisitos
 - Node.js (versão 18 ou superior)
@@ -20,6 +21,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 Para iniciar o servidor em modo de desenvolvimento (com reinicialização automática ao salvar alterações):
 npm install  # Instala as dependências
 npm run dev  # Inicia o servidor
+
 
 ## ⚡ Executando a Aplicação
 Para iniciar o servidor em modo de desenvolvimento (com reinicialização automática ao salvar alterações), use o comando: npm run dev
@@ -38,6 +40,8 @@ Retorna um curso específico com base no seu `id`.
 #### `POST /courses`
 Cria um novo curso. É necessário enviar um corpo (`body`) no formato JSON.
 
+
 🛠️ Troubleshooting
+
 Erro de porta ocupada? Mude a porta no package.json ou mate o processo com killall node.
 TypeScript não compila? Rode npm run build para verificar erros.
