@@ -1,40 +1,43 @@
-API de Cursos com Node.js e Fastify
-Projeto de estudo para construção de uma API RESTful com Node.js, Fastify e TypeScript. A API gerencia um cadastro simples de cursos, com funcionalidades para criar e listar registros.
+# API de Cursos com Node.js e Fastify
 
-✨ Tecnologias
+Este é um projeto de estudo para a criação de uma API RESTful utilizando Node.js, Fastify e TypeScript. A API gerencia um cadastro simples de cursos, permitindo criar e listar registros.
 
-Node.js (versão 18 ou superior)
-TypeScript
-Fastify
-tsx (para execução em desenvolvimento)
+## ✨ Tecnologias Utilizadas
 
-⚡ Como Executar
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
-Pré-requisitos:
-Node.js (versão 18 ou superior)
-npm ou yarn
+* **[Node.js](https://nodejs.org/en/)**
+* **[TypeScript](https://www.typescriptlang.org/)**
+* **[Fastify](https://www.fastify.io/)**
+* **[tsx](https://github.com/esbuild-kit/tsx)** (para execução em modo de desenvolvimento)
 
-Modo de Desenvolvimento
-Para rodar o servidor com reinicialização automática ao salvar alterações:
+* ## Iniciando o Projeto
+### Pré-requisitos
+- Node.js (versão 18 ou superior)
+- npm ou yarn
+
+### Modo de Desenvolvimento
+Para iniciar o servidor em modo de desenvolvimento (com reinicialização automática ao salvar alterações):
 npm install  # Instala as dependências
 npm run dev  # Inicia o servidor
 
-O servidor estará disponível em http://localhost:3000.
+## ⚡ Executando a Aplicação
+Para iniciar o servidor em modo de desenvolvimento (com reinicialização automática ao salvar alterações), use o comando: npm run dev
 
-Endpoints da API:
+O servidor estará disponível no endereço `http://localhost:3000`.
 
-GET /courses
-Lista todos os cursos cadastrados.
+## Endpoints da API
+A API possui os seguintes endpoints:
 
-GET /courses/:id
-Retorna um curso específico pelo id.
+#### `GET /courses`
+Retorna uma lista com todos os cursos cadastrados.
 
-POST /courses
-Cria um novo curso. Envie um corpo JSON.
+#### `GET /courses/:id`
+Retorna um curso específico com base no seu `id`.
 
-🤝 Contribuindo
-Contribuições são bem-vindas! Abra issues ou pull requests para sugestões e melhorias.
+#### `POST /courses`
+Cria um novo curso. É necessário enviar um corpo (`body`) no formato JSON.
 
-🛠️ Solução de Problemas
-Porta ocupada? Altere a porta no package.json ou use killall node.
-Erro no TypeScript? Execute npm run build para verificar.
+🛠️ Troubleshooting
+Erro de porta ocupada? Mude a porta no package.json ou mate o processo com killall node.
+TypeScript não compila? Rode npm run build para verificar erros.
