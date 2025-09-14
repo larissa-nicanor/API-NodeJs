@@ -12,21 +12,17 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 * **[tsx](https://github.com/esbuild-kit/tsx)** (para execução em modo de desenvolvimento)
 
 
-* ## Iniciando o Projeto
-### Pré-requisitos
-- Node.js (versão 18 ou superior)
-- npm ou yarn
-
-### Modo de Desenvolvimento
-Para iniciar o servidor em modo de desenvolvimento (com reinicialização automática ao salvar alterações):
-npm install  # Instala as dependências
-npm run dev  # Inicia o servidor
+### Scripts
+npm run dev: inicia o servidor com reload e carrega variáveis de .env
+npm run db:generate: gera artefatos do Drizzle a partir do schema
+npm run db:migrate: aplica migrações no banco
+npm run db:studio: abre o Drizzle Studio
 
 
 ## ⚡ Executando a Aplicação
 Para iniciar o servidor em modo de desenvolvimento (com reinicialização automática ao salvar alterações), use o comando: npm run dev
 
-O servidor estará disponível no endereço `http://localhost:3000`.
+O servidor estará disponível no endereço `http://localhost:3333`.
 
 ## Endpoints da API
 A API possui os seguintes endpoints:
