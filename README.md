@@ -18,15 +18,6 @@ Para iniciar o servidor em modo de desenvolvimento (com reinicialização autom�
 
 O servidor estará disponível no endereço `http://localhost:3333`.
 
-### Scripts
-npm run dev --> inicia o servidor com reload e carrega variáveis de .env
-
-npm run db:generate -->gera artefatos do Drizzle a partir do schema
-
-npm run db:migrate -->aplica migrações no banco
-
-npm run db:studio --> abre o Drizzle Studio
-
 ## Endpoints da API
 A API possui os seguintes endpoints:
 
@@ -44,3 +35,12 @@ Retorna uma lista com todos os cursos cadastrados.
 
 Erro de porta ocupada? Mude a porta no package.json ou mate o processo com killall node.
 TypeScript não compila? Rode npm run build para verificar erros.
+
+### Scripts
+npm run dev --> inicia o servidor com reload e carrega variáveis de .env
+
+npm run db:generate -->gera artefatos do Drizzle a partir do schema
+
+npm run db:migrate -->aplica migrações no banco
+
+npm run db:studio --> abre o Drizzle Studio
